@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Found from: https://github.com/rizhu/Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemBF}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \emph{#2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Laryn Qi} \\ \vspace{1pt}
+    \small +1 (925) 336-1528 $|$ \href{mailto:larynqi@berkeley.edu}{\underline{larynqi@berkeley.edu}} $|$ \href{https://larynqi.com/}{\underline{larynqi.com/}} $|$
+    \href{https://www.linkedin.com/in/larynqi/}{\underline{linkedin.com/in/larynqi/}} $|$
+    \href{https://github.com/LarynQi/}{\underline{github.com/LarynQi/}}
+\end{center}
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+            {University of California, Berkeley}{}{M.S. Electrical Engineering and Computer Science}{May 2024}
+            \resumeItemListStart
+                \resumeItemBF{Research}{Machine Learning for CS Education}
+            \resumeItemListEnd
+    \resumeSubheading
+        {University of California, Berkeley}{\textbf{GPA: 3.82/4.00}}{B.A. Computer Science, B.A. Music}{May 2023}
+        \resumeItemListStart
+            \resumeItemBF{Courses}{Combinatorial Algorithms \& Data Structures (Graduate), Randomized Algorithms, Computability \& Complexity Theory, Programming Languages \& Compilers, Machine Learning, Data Science, Operating Systems, Security, Computer Architecture, Probability \& Random Processes, Linear Algebra, Discrete Math, Signals \& Circuits}
+            \resumeItemBF{Honors}{Upsilon Pi Epsilon (UPE) CS Honor Society, College of Letters \& Science Honors 2020-2021}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {UC Berkeley EECS Department}{Berkeley, CA}{Lecturer – CS 61A The Structure and Interpretation of Computer Programs}{June 2022 – August 2022}
+    \resumeItemListStart
+        \resumeItem{Gave lectures, wrote exams, and hired staff of \textbf{25+} TAs/tutors and \textbf{50+} academic interns for class of \textbf{400+} students}
+        \resumeItem{Taught abstraction, recursion, OOP, trees, linked lists, complexity, and interpreters in Python, Scheme, and SQL}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Amazon}{Seattle, WA}{Software Development Engineer Intern – Threat Intelligence}{May 2021 – August 2021}
+    \resumeItemListStart
+        \resumeItem{Built intelligence collection service to improve threat discoverability via fast searching through large datasets}
+        \resumeItem{Resulted in \textbf{30\%} improvement in Analyst efficiency, saving \textbf{300} person-hours a month at a cost of less than \textbf{\$2/hour}}
+        \resumeItem{Used serverless AWS infrastructure to implement a scalable, cost-efficient, fault-tolerant, extensible, and secure system}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {San Francisco Conservatory of Music {\normalfont (SFCM)}}{San Francisco, CA}{Contract Project Manager}{May 2022 - January 2023}
+    \resumeItemListStart
+        \resumeItem{Built a dashboard for SFCM to help with concert planning and increase turnout by displaying historical data}
+        \resumeItem{Trained \textbf{6} developers with no web experience to build a full-stack web app using React, Express, and PostgreSQL}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Mothership}{Austin, TX (Remote)}{Contract Project Manager}{December 2021 – May 2022}
+    \resumeItemListStart
+        \resumeItem{Sourced \& specced data science/backend project to serve carrier supply \& shipment demand density in metro areas}
+        \resumeItem{Led \textbf{6} developers through system architecture research, design doc, data analysis, service deployment, and testing}
+        \resumeItem{Created ramp-up project \& organized weekly syncs, worksessions, retros, check-ins, client stand-ups, and socials}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {UC Berkeley EECS Department}{Berkeley, CA}{Head TA – CS 61A The Structure and Interpretation of Computer Programs}{January 2020 – Present}
+    \resumeItemListStart
+        \resumeItem{Lead team of \textbf{9} Head TAs and collaborate with professors to manage \textbf{70+} general course staff members}
+        % \resumeItem{Coordinate recruitment, onboarding, prep assignments, check-ins, socials, and logistics for 120+ academic interns}
+        % \resumeItem{Holding multiple weekly discussions, labs, and office hours \& answered forum questions in class of 2000+ students}
+        % \resumeItem{Maintaining course software \& website, developing \& reviewing assignments, proctoring \& grading exams}
+        \resumeItem{Hold multiple weekly discussions, labs, and office hours \& maintain infrastructure/website for class of \textbf{2000+} students}
+        \resumeItem{Average teaching effectiveness rating of \textbf{4.52/5.00} by students, won \textbf{Outstanding Graduate Student Instructor Award (2022)}, awarded to \textbf{top 10\% of TAs university-wide}, and won \textbf{Outstanding Academic Intern Award (2020)}, awarded to \textbf{top 7\% of CS 61A Spring 2020 interns}}
+    \resumeItemListEnd
+
+% \resumeSubheading
+%     {University of California, Berkeley}{Berkeley, CA}{Undergraduate Research Assistant - SLICE Lab (advised by Professor James Demmel)}{August 2021 -- Present}
+%     \resumeItemListStart
+%         \resumeItem{Lead research group exploring techniques for communication-reduction and privacy-preservation via \textbf{randomized linear algebra}, and \textbf{differential privacy} in \textbf{federated learning} settings}
+%         \resumeItem{\textbf{\underline{\href{https://github.com/rizhu/rayleaf-source}{RayLEAF}}}: Design, develop, and optimize \textbf{fast and scalable} benchmark with \textbf{flexible APIs} using \textbf{PyTorch} and \textbf{Ray}, achieving over \textbf{60x} speedup over existing frameworks}
+%     \resumeItemListEnd
+    
+% \resumeSubSubheading
+%     {Head Teaching Assistant (TA) - CS 70 Discrete Mathematics and Probability Theory}{June 2020 -- Present}
+%     \resumeItemListStart
+%         \resumeItem{Manage \textbf{over 50 members of course staff}, teach discussion sections of \textbf{40 students}, and coordinate course logistics with 4 other head TAs and 2 professors for a class of \textbf{over 850 students}}
+%         \resumeItem{Rated \textbf{4.7 / 5} on average by students and won \textbf{Outstanding Graduate Student Instructor Award (2021)}, awarded to \textbf{top 10\% of TAs university-wide}}
+%     \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+    % \resumeSubheading
+    % {BlueConduit}{Ann Arbor, MI (Remote)}{Contract Software Developer}{August 2021 – January 2022}
+    \resumeProjectHeading
+    {\textbf{BlueConduit} (Contract)}{August 2021 – January 2022}
+    \resumeItemListStart
+        \resumeItem{Built web app for city officials to upload \& visualize water service pipeline data for finding best replacement locations}
+        \resumeItem{Part of a \href{https://www.nrdc.org/press-releases/blueconduit-and-googleorg-announce-coalition-help-communities-quantify-and-locate}{\underline{multimillion collaboration}} between BlueConduit and Google.org to support lead service line replacements}
+        \resumeItem{Used Django REST framework \& JSON web tokens to handle user authentication and Mapbox API for visualizations}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %     {Relativity Space}{Long Beach, CA (Remote)}{Contract Software Developer}{February 2021 – May 2021}
+    \resumeProjectHeading
+    {\textbf{Relativity Space} (Contract)}{February 2021 – May 2021}
+        \resumeItemListStart
+            \resumeItem{Created web app for visualizing real-time time-series data streaming from sensors on rockets into InfluxDB}
+            \resumeItem{Built APIs, sockets, React dashboards, D3 graphs with custom absolute/relative timeranges \& multiple data streams}
+            \resumeItem{Emphasized improved performance over Grafana through backend data caching and shared global state in frontend}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{ok-disc} $|$ \href{https://github.com/LarynQi/ok-disc/}{\underline{github.com/LarynQi/ok-disc/}}}{July 2020 – January 2021}
+    \resumeItemListStart
+        \resumeItem{A lightweight Python autograder to help students debug Python, Scheme, and SQL code during virtual discussions}
+        \resumeItem{Simple CLI for running test cases and displaying expected \& actual output with support for multiple languages}
+        \resumeItem{Used by \textbf{330+} UC Berkeley intro CS students through Computer Science Mentors, a tutoring student organization}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\begin{itemize}[leftmargin=0.05in, label={}]
+    \item{
+    
+    \textbf{Languages}: Python, Java, C, SQL, Go, (Java/Type)Script, OCaml, LaTeX, Assembly, Lisp, HTML/CSS\\
+    
+    \textbf{Tools \& Frameworks}: Git, AWS, GCP, Unix, Linux, Docker, Heroku, MongoDB, InfluxDB, React, Vue, Express, Flask, Django, pandas, NumPy, Matplot}
+\end{itemize}
+
+\end{document}
